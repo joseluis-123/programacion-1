@@ -6,31 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    Nro 1
-    <input type="text" name="text" id="text"/><br/>
-    <small id="mensaje" style="color: red;"></small><br/>
-    <button onclick="comparar()">Calcular</button>
-
-    <p id="resultado"> </p>
+ 
 </body>
 <script>
- function comparar(){
-        var text = document.getElementById("text").value;
-        var ntext = text.length;
-        var i;
-        console.log(resultado);
-        return resultado;
-
-        for(i = 0 ; i < nText; i++){
-            if (text.substr(i,1) === "a" || text.substr(i,1) === "e" || text.substr(i,1) === "i" || text.substr(i,1) === "o" 
-            || text.substr(i,1) === "u") 
-            {
-                document.getElementById("resultado").innerHTML =""+ text.substr(i,1);
-            
-            }
-        
-    }
-    var accion = comparar(text);
-        document.getElementById("resultado").innerHTML = accion;
+    var text = prompt("Escribe una frase");
+    var nText = text.length;
+    var i;
+        for (i = 0; i < nText; i++) {
+            if (text.substr(i,1) === "a") {
+                document.write(text.substr(i,1));
+                }
+              }       
+ 
 </script>
 </html>
