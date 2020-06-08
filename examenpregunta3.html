@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+<title>Conversor Celsius a Farenheit</title>
+<body>
+
+<h2>Conversor de temperaturas</h2>
+<p>Escriba aqui el valor de la temperatura en celcius:</p>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius">
+  <button onclick="CelsiusFarenheit()">Calcular</button>
+</p>
+<p>Farenheit: <span id="Farenheit"></span></p>
+
+<script>
+function CelsiusFarenheit() {
+  var temp = document.getElementById("inputCelsius").value;
+  document.getElementById("Farenheit").innerHTML=((temp*9/5)+32);
+  
+}
+</script>
+<p>enlace de referencia:http://www.elosiodelosantos.com/sergiman/div/formulas_conversion_de_temperaturas.htm</p>
+</body>
+</html>

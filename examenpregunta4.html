@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Verificar si un numero dado esta entre 20 y 100 o 400:</p>
+    Escribe el Numero:
+    <input type="text" name="nro1" id="nro1"/><br/>
+    <small id="mensaje" style="color: red;"></small><br/>
+    <button onclick="comparar()">Calcular</button>
+    <p id="resultado"> </p>
+</body>
+<script>
+   function comparar(){
+        var nro1 = parseInt(document.getElementById("nro1").value);
+
+        if(nro1 % 20===0 || nro1 % 100===0 || nro1 % 400===0){
+            document.getElementById("resultado").innerHTML = " " + nro1 + " Es divisible por 20, 100, 400";
+        }
+        
+        else{
+            document.getElementById("resultado").innerHTML = " " + nro1 + " No es divisible por 20, 100, 400";
+        } 
+        
+    }
+</script>
+</html>
