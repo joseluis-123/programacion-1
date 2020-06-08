@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nro 1
+    <input type="text" name="nro1" id="nro1"/><br/>
+    <small id="mensaje" style="color: red;"></small><br/>
+    <button onclick="comparar()">Calcular</button>
+    <p id="resultado"> </p>
+</body>
+<script>
+   function comparar(){
+        var nro1 = parseInt(document.getElementById("nro1").value);
+        var i=2;
+        while (nro1 % i !== 0 && i< nro1 /2) {
+            i++
+            
+        }
+
+        if(nro1 % i !==0){
+            document.getElementById("resultado").innerHTML = " " + nro1 + " El nùmero Primo";
+        }
+        
+        else{
+            document.getElementById("resultado").innerHTML = " " + nro1 + " El nùmero no es primo";
+        } 
+        
+    }
+</script>
+</html>
